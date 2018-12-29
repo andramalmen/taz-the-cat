@@ -1,0 +1,18 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - yarn
+      - yarn run build
+artifacts:
+  files:
+    - build/index.html
+    - build/favicon.ico
+    - build/manifest.json
+    - build/precache-manifest.*.js
+    - build/service-worker.js
+    - build/asset-manifest.json
+    - build/static/css/*
+    - build/static/js/*
+    - build/images/*
